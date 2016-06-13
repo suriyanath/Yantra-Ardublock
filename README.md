@@ -1,5 +1,5 @@
 # Ardublock
-A Graphical Programming Language for Dwenguino
+A Graphical Programming Language for Dwenguino & Induino
 
 Prerequisites: Arduino IDE and Maven tool 
 
