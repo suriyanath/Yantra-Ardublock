@@ -1,4 +1,4 @@
-package com.ardublock.translator.block.Dwenguino;
+package com.ardublock.translator.block.Induino;
 
 import com.ardublock.translator.Translator;
 import com.ardublock.translator.block.TranslatorBlock;

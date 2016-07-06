@@ -6626,6 +6626,166 @@
 				</Image>
 			</Images>
 			</BlockGenus>
+		<!-- *************************Induino************************************************* -->	
+	    <BlockGenus name="induino_LCD" kind="command" color="0 0 0" initlabel="bg.induino_LCD">
+			<description>
+				<text>16 Char by 2 Line LCD display</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="string" connector-kind="socket" label="bc.print">
+					<DefaultArg genus-name="message" label="Induino LCD"/>
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.line_number">
+					<DefaultArg genus-name="number" label="0" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.character_number">
+					<DefaultArg genus-name="number" label="0" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/LCD16by2.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+		
+		<BlockGenus name="induino_LCD_clear" kind="command" color="0 255 200" initlabel="bg.induino_LCD_clear">
+			<description>
+				<text>Induino LCD Clear</text>
+			</description>
+		</BlockGenus>
+		
+		<BlockGenus name="induino_dc_motor" kind="command" color="216 5 210" initlabel="bg.induino_dc_motor">
+			<description>
+				<text>Induino DC motor</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.motor_channel">
+					<DefaultArg genus-name="number" label="1" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.motor_speed">
+					<DefaultArg genus-name="number" label="255" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				 <Image>
+					<FileLocation>com/ardublock/block/motor.jpg</FileLocation>
+				</Image> 
+			</Images> 
+		</BlockGenus>
+		
+		<BlockGenus name="induino_ultrasonic" kind="data" color="10 10 200" initlabel="bg.induino_ultrasonic">
+			<description>
+				<text>Ultrasonic distance sensor</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug" label="cm" />
+				<BlockConnector connector-type="number" connector-kind="socket" label="trig#">
+					<DefaultArg genus-name="number" label="12" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="echo#">
+					<DefaultArg genus-name="number" label="11" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/ultrasonic.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+		
+		<BlockGenus name="induino_servo" kind="command" color="255 150 10" initlabel="bg.induino_servo">
+			<description>
+				<text>Servo Default</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.servo_channel">
+					<DefaultArg genus-name="number" label="1" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.angle">
+					<DefaultArg genus-name="number" label="90" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/servo.jpg</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+		
+<!-- 		<BlockGenus name="induino_LEDS" kind="command" color="205 133 63" initlabel="bg.induino_LEDS">
+			<description>
+				<text>LEDS</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket">
+					<DefaultArg genus-name="variable_number" label="0b000" />
+				</BlockConnector>
+			</BlockConnectors>
+		</BlockGenus>
+		 -->
+		<BlockGenus name="induino_tsop" kind="data" color="189 183 107" initlabel="bg.induino_tsop">
+			<description>
+				<text>Remote control sensor</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug" label="cm" />
+				<BlockConnector connector-type="number" connector-kind="socket" label="sig#">
+					<DefaultArg genus-name="number" label="15" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/tsop.jpg</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+		
+		<BlockGenus name="induino_rgb" kind="command" color="255 150 100" initlabel="bg.induino_rgb">
+			<description>
+				<text>RGB LED</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.induino_red">
+					<DefaultArg genus-name="number" label="255" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.induino_green">
+					<DefaultArg genus-name="number" label="255" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.induino_blue">
+					<DefaultArg genus-name="number" label="255" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/rgb.jpg</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+		
+		<BlockGenus name="induino_LEDS" kind="command" color="128 0 0" initlabel="bg.induino_LEDS">
+			<description>
+				<text>3 LEDS</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="boolean" connector-kind="socket" label="bc.induino_pin11">
+					<DefaultArg genus-name="digital-high" label="HIGH" />
+				</BlockConnector>
+				<BlockConnector connector-type="boolean" connector-kind="socket" label="bc.induino_pin12">
+					<DefaultArg genus-name="digital-high" label="HIGH" />
+				</BlockConnector>
+				<BlockConnector connector-type="boolean" connector-kind="socket" label="bc.induino_pin13">
+					<DefaultArg genus-name="digital-high" label="HIGH" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/3color.jpg</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+		
+				
 	    <!-- *************************Dwengo************************************************* -->
 	    <BlockGenus name="dwengo_dc_motor" kind="command" color="216 5 210" initlabel="bg.dwengo_dc_motor">
 			<description>
@@ -9042,6 +9202,17 @@
 			<FamilyMember>panda_o5</FamilyMember>
 		</BlockFamily> -->
 		<BlockFamily>
+			<FamilyMember>induino_LEDS</FamilyMember>
+			<FamilyMember>induino_rgb</FamilyMember>
+			<FamilyMember>induino_LCD</FamilyMember>
+			<FamilyMember>induino_LCD_clear</FamilyMember>
+			<FamilyMember>induino_ultrasonic</FamilyMember>
+			<FamilyMember>induino_tsop</FamilyMember>
+			<FamilyMember>induino_servo</FamilyMember>
+			<FamilyMember>induino_dc_motor</FamilyMember>
+		</BlockFamily>
+		
+		<BlockFamily>
 		<FamilyMember>dwengo_init</FamilyMember>
 		<FamilyMember>dwengo_LEDS</FamilyMember>
 		<FamilyMember>dwengo_LEDS_Variable</FamilyMember>
@@ -9651,6 +9822,16 @@
 				<BlockGenusMember>DuinoEDU_MP3_Player</BlockGenusMember>
 				<BlockGenusMember>DuinoEDU_MP3_Pause</BlockGenusMember>		
 			</BlockDrawer> -->
+		 	<BlockDrawer button-color="64 64 64" name="bd.induino" type="factory">
+				<BlockGenusMember>induino_LEDS</BlockGenusMember>
+				<BlockGenusMember>induino_rgb</BlockGenusMember>
+				<BlockGenusMember>induino_LCD</BlockGenusMember>
+				<BlockGenusMember>induino_LCD_clear</BlockGenusMember>
+				<BlockGenusMember>induino_ultrasonic</BlockGenusMember>
+				<BlockGenusMember>induino_tsop</BlockGenusMember>
+				<BlockGenusMember>induino_servo</BlockGenusMember>
+				<BlockGenusMember>induino_dc_motor</BlockGenusMember>
+			</BlockDrawer> 
 			<BlockDrawer button-color="216 5 10" name="bd.dwengo" type="factory">
 			    <BlockGenusMember>dwengo_init</BlockGenusMember>
  			    <BlockGenusMember>dwengo_LEDS</BlockGenusMember> 
