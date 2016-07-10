@@ -6681,10 +6681,10 @@
 			<BlockConnectors>
 				<BlockConnector connector-type="number" connector-kind="plug" label="cm" />
 				<BlockConnector connector-type="number" connector-kind="socket" label="trig#">
-					<DefaultArg genus-name="number" label="12" />
+					<DefaultArg genus-name="number" label="18" />
 				</BlockConnector>
 				<BlockConnector connector-type="number" connector-kind="socket" label="echo#">
-					<DefaultArg genus-name="number" label="11" />
+					<DefaultArg genus-name="number" label="19" />
 				</BlockConnector>
 			</BlockConnectors>
 			<Images>
