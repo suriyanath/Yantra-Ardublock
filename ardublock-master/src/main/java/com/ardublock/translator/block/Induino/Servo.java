@@ -36,7 +36,7 @@ public class Servo extends TranslatorBlock {
 		}
 		
 		if(channelNumber==1) {
-			translator.addDefinitionCommand("Servo servo1;");
+			translator.addDefinitionCommand("Servo servoA4;");
 			translator.addSetupCommand("servoA4.attach(18);");
 			ret = "servoA4.write(" + angle + ");\n";
 		}
